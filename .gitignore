@@ -1,0 +1,33 @@
+# Python caches and bytecode
+__pycache__/
+*.py[cod]
+
+# Test and tool caches
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local test outputs and temporary render artifacts
+tests/.tmp/
+.tmp_qr/
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.claude
+.ruff-cache/
+.pytest_cache/
+
+
+# Local logs
+*.log
+
+# Accidental Windows device-name artifact
+nul
+

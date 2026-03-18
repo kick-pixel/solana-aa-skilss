@@ -1,0 +1,4 @@
+interface:
+  display_name: "Solana AA Settlement"
+  short_description: "Solana group expense settlement skill"
+  default_prompt: "Use $solana-aa-settlement to identify a payer expense, confirm a split draft, and generate trackable Solana payment requests."

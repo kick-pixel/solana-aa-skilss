@@ -1,0 +1,59 @@
+{
+  "status": "success",
+  "summary": "Fetched normalized wallet transfers",
+  "next_actions": ["filter_recent_transfers"],
+  "artifacts": [],
+  "data": {
+    "wallet_address": "alice-wallet",
+    "rpc_url": "https://api.mainnet.solana.com",
+    "transaction_count": 3,
+    "max_normalized_transfers": 10,
+    "transfers": [
+      {
+        "signature": "sig-dinner",
+        "timestamp": "2026-03-16T11:40:00Z",
+        "owner": "alice-wallet",
+        "source": "alice-wallet",
+        "destination": "merchant-wallet",
+        "direction": "outgoing",
+        "amount": "268.00",
+        "token_symbol": "USDC",
+        "token_mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "counterparty": "merchant-wallet",
+        "counterparty_label": "Dinner Merchant",
+        "memo": "team dinner",
+        "kind": "payment"
+      },
+      {
+        "signature": "sig-dinner",
+        "timestamp": "2026-03-16T11:40:00Z",
+        "owner": "alice-wallet",
+        "source": "alice-wallet",
+        "destination": "tip-wallet",
+        "direction": "outgoing",
+        "amount": "12.00",
+        "token_symbol": "USDC",
+        "token_mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "counterparty": "tip-wallet",
+        "counterparty_label": "Dinner Tip",
+        "memo": "team dinner",
+        "kind": "payment"
+      },
+      {
+        "signature": "sig-snacks",
+        "timestamp": "2026-03-16T10:10:00Z",
+        "owner": "alice-wallet",
+        "source": "alice-wallet",
+        "destination": "cafe-wallet",
+        "direction": "outgoing",
+        "amount": "18.50",
+        "token_symbol": "USDC",
+        "token_mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "counterparty": "cafe-wallet",
+        "counterparty_label": "Cafe Corner",
+        "memo": "coffee",
+        "kind": "payment"
+      }
+    ]
+  }
+}
