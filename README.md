@@ -58,6 +58,12 @@ AA 的痛点从不是数学：
 
 简单说：**只要有「一个人先付了，后面几个人要补给TA」的场景，这个 skill 就有意义。**
 
+
+
+### OpenClaw + TelegramBot示例
+
+![aa_pay](doc/README/aa_pay.png)
+
 ### 技术栈
 
 **链上层**
@@ -85,6 +91,32 @@ AA 的痛点从不是数学：
 - Markdown payment request renderer
 
 ### 快速开始
+
+#### 安装到运行时技能目录
+
+如果你要把当前项目作为技能接入 `OpenClaw` 或 `OpenCode`，先把当前项目目录中的 `solana-aa-settlement` 技能拷贝到目标运行时的技能目录。
+
+`OpenClaw` 服务器：
+
+```bash
+mkdir -p ~/.openclaw/skills
+cp -R skills/solana-aa-settlement ~/.openclaw/skills/
+```
+
+目标路径：`~/.openclaw/skills/solana-aa-settlement`
+
+`OpenCode` 本地：
+
+```bash
+mkdir -p ~/.config/opencode/skills
+cp -R skills/solana-aa-settlement ~/.config/opencode/skills/
+```
+
+目标路径：`~/.config/opencode/skills/solana-aa-settlement`
+
+安装完成后，确认目标目录下存在 `SKILL.md`、`scripts/`、`references/` 等文件，再在对应运行时中调用该技能。
+
+
 
 #### 1. 结构验证
 
